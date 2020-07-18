@@ -1,0 +1,19 @@
+.bg2{
+  background-color: #cfcfcf;
+  max-width: 100%;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sectionTitle{
+  display: block;
+  text-align: center;
+  margin: 30px;
+  font-size: 50px;
+}
