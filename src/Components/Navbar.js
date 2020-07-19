@@ -1,22 +1,24 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../static/css/Navbar.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 
 function Navbar() {
 
-  var nav = 'navBar';
   var lastScrollTop = 0;
+
+  const [style, setStyle] = useState('navBar');
+
   const handleScroll = () => {
       const position = window.pageYOffset || document.documentElement.scrollTop;
       if (position > lastScrollTop){
         console.log("down");
-        nav = 'navUp';
+        setStyle('navUp');
 
       }
       else{
         console.log("up");
-        nav = 'navBar';
+        setStyle('navBar');
       }
       lastScrollTop = position <= 0 ? 0 : position;
   };
@@ -27,6 +29,7 @@ function Navbar() {
       return () => {
           window.removeEventListener('scroll', handleScroll);
       };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -34,7 +37,7 @@ function Navbar() {
   }, []);
 
     return(
-        <div className={nav} >
+        <div className={style} >
           <ul className='navList'>
             <a href="#about" className="button" data-aos='slide-down' data-aos-delay='300'>About</a>
             <a href="#projects" className="button" data-aos='slide-down' data-aos-delay='600'>Projects</a>

@@ -18,7 +18,7 @@ function Project(props) {
 
     useEffect(() => {
       Aos.init({ duration: 2000,
-                 offset: 300,
+                 offset: 400,
                  once: 'true'});
     }, []);
 

@@ -50,6 +50,7 @@
 .navBar {
   animation-name: fade_in;
   animation-duration: 2s;
+  transition: top 1s ease-in-out;
   content: inherit;
   position: fixed;
   top: 0;
@@ -63,20 +64,6 @@
   100% {opacity: 100%}
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em 3em;
-  transition: background 250ms ease-in;
-  background: var(--background);
-  color: var(--text);
-  }
 
 .navList{
   list-style: none;
@@ -86,5 +73,12 @@ header {
   }
 
   .navUp{
-    top: -40px;
+    right: 0;
+    z-index: 999;
+    top: -100px;
+    transition: top 1s ease-in-out;
+    animation-name: fade_out;
+    animation-duration: 1s;
+    content: inherit;
+    position: fixed;
   }

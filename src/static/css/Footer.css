@@ -1,4 +1,21 @@
-.footer{
-  margin-top: 200px;
-  height: 500px;
+.bg3{
+  background: #cfcfcf;
+  overflow: auto;
+}
+
+.copyright{
+  font-weight: lighter;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.icons{
+  justify-content: center;
+  display: flex;
+}
+
+.icon{
+  color: black;
+  font-size: 100px;
 }
