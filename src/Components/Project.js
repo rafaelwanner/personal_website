@@ -6,8 +6,9 @@ import Aos from 'aos';
 
 function Project(props) {
 
-    if (props.content.id === 1){ var img = require('../static/images/projects/covid.png') } //find better solution for that
-    else if (props.content.id === 2) { img = require('../static/images/projects/snake.png') }; //find better solution for that
+    if(props.content.id === 1){ var img = require('../static/images/projects/asset_track.png')}
+    else if (props.content.id === 2){ img = require('../static/images/projects/covid.png') } //find better solution for that
+    else if (props.content.id === 3) { img = require('../static/images/projects/snake.png') }; //find better solution for that
 
     if(props.content.id % 2 === 0){
       var animation = 'fade-right';
