@@ -15,7 +15,7 @@ function Footer() {
           <FontAwesomeIcon className='icon' icon={faGithub} />
         </a>
       </div>
-      <p className="copyright">&copy; Rafael Wanner </p>
+      <p className="copyright">&copy; 2020 - Rafael Wanner </p>
     </div>
 
   )
