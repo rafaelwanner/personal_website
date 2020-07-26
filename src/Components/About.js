@@ -1,28 +1,30 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import '../static/css/Second.css';
 import '../static/css/About.css';
-import markdown from '../Data/about.md'
+import List from './List';
+import about from '../Data/about.js'
 
 class About extends React.Component {
 
   constructor(){
     super();
-    this.state = {about: null}
+    this.state = {
+      data: about
     }
-
-  componentWillMount(){
-    fetch(markdown).then((response) => response.text()).then((text) => {
-      this.setState({ about: text})
-    })
   }
+
   render(){
+    const skills = this.state.data.skills.map(skill => <List key={skill.id} content={skill} />)
     return(
       <div className='bg2' id='about'>
         <h1 className='sectionTitle'>About</h1>
           <div className='container'>
             <div className='about'>
-              <ReactMarkdown source={this.state.about} sourcePos={true} />
+              <div>
+                <p className='intro'>{this.state.data.about}</p>
+                <h3>Skills</h3>
+                {skills}
+              </div>
               <img src={require('../static/images/background/me.jpeg')} alt='' />
             </div>
           </div>

@@ -12,12 +12,10 @@ function Navbar() {
   const handleScroll = () => {
       const position = window.pageYOffset || document.documentElement.scrollTop;
       if (position > lastScrollTop){
-        console.log("down");
         setStyle('navUp');
 
       }
       else{
-        console.log("up");
         setStyle('navBar');
       }
       lastScrollTop = position <= 0 ? 0 : position;

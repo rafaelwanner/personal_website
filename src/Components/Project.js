@@ -29,7 +29,7 @@ function Project(props) {
         <img src={img} alt="" data-aos='flip-up'/>
         <div>
           <h3>{props.content.title}</h3>
-          <p>{props.content.description}</p>
+          <p className='text'>{props.content.description}</p>
           <a href={props.content.link} className='btn'>Repository</a>
         </div>
       </main>

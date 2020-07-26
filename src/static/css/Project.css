@@ -40,3 +40,8 @@ img {
     display: block;
   }
 }
+
+.text{
+  line-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
