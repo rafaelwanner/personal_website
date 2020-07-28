@@ -25,12 +25,12 @@ function Project(props) {
 
 
     return(
-      <main className='project' data-aos={animation}>
+      <main name='proj'className='project' data-aos={animation}>
         <img src={img} alt="" data-aos='flip-up'/>
         <div>
           <h3>{props.content.title}</h3>
           <p className='text'>{props.content.description}</p>
-          <a href={props.content.link} className='btn'>Repository</a>
+          <a href={props.content.link} className='btn'>{props.content.button}</a>
         </div>
       </main>
     )

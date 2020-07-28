@@ -11,7 +11,7 @@ function List(props) {
 
   return(
     <div>
-      <h4>{props.content.type}</h4>
+      <h4 className='sub_head'>{props.content.type}</h4>
       <ul>
         {items}
       </ul>

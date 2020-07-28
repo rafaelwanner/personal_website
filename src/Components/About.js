@@ -22,8 +22,10 @@ class About extends React.Component {
             <div className='about'>
               <div>
                 <p className='intro'>{this.state.data.about}</p>
-                <h3>Skills</h3>
-                {skills}
+                <h3 className='sub_head'>Skills</h3>
+                  <div className='skills'>
+                    {skills}
+                  </div>
               </div>
               <img src={require('../static/images/background/me.jpeg')} alt='' />
             </div>

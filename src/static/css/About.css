@@ -13,6 +13,13 @@
 .intro{
   line-height: 30px;
   font-family: 'Open Sans', sans-serif;
+}
 
+.skills{
+  margin-left: 20px;
+}
 
+.sub_head{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:  500;
 }

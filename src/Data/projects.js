@@ -7,6 +7,7 @@ const projects = [
                + ' course HTML and CSS. I would love for you to check it out and please give me some feedback!',
     image: '../static/images/projects/asset_track.png',
     link: 'https://still-cove-11137.herokuapp.com',
+    button: 'Website',
   },
     {
       id: 2,
@@ -15,6 +16,7 @@ const projects = [
                  + 'highlight the importance of social distancing. ',
       image: '../static/images/projects/covid.png',
       link: 'https://github.com/rafaelwanner/CoVid-19-Simulation',
+      button: 'Repository',
     },
     {
       id: 3,
@@ -23,6 +25,7 @@ const projects = [
                 + ' My personal record is 30 points. Try and beat me.',
       image: '../static/images/projects/snake.png',
       link: 'https://github.com/rafaelwanner/Snake',
+      button: 'Repository',
     }
 ];
 
