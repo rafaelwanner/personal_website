@@ -13,7 +13,6 @@ class Home extends Component {
           <div className='welcome fade_in'>
             <p data-aos='slide-down' data-aos-delay='300'>Hi, my name is</p>
             <h1 data-aos='slide-right' data-aos-delay='600'>Rafael Wanner.</h1>
-            <h1 data-aos='slide-up' data-aos-delay='900' className='subheading'>Welcome to my personal page.</h1>
           </div>
         </div>
       </div>
